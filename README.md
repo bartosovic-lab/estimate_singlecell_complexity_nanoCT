@@ -34,7 +34,7 @@ wc -l barcodes.tsv
 
 ```
 
-barcodes can be extracted from nanoscope output using following script:
+barcodes can be extracted from nanoscope or cellranger output using following script:
 ```
 # Cellranger output - column 10 (is__cell_barcode) is 1 for cell barcodes
 awk 'BEGIN{FS=","; OFS="\t"} $10 == 1 {print $2}' singlecell.csv | sed 's/\"//g' > barcodes.tsv
