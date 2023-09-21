@@ -1,6 +1,7 @@
 # Tool to downsample and estimate complexity of nano-CT data
 
-The tool takes as input ```possorted_bam.bam``` file from cellranger and list of cell barcodes. It outputs a tsv file with median/mean number of fragments per cell as function of number of reads.
+The tool takes as input ```possorted_bam.bam``` file from cellranger and list of cell barcodes ```barcodes.tsv```. 
+It outputs a tsv file with median/mean number of fragments per cell as function of number of reads.
 
 ## Example usage
 
