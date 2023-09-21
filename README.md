@@ -3,6 +3,13 @@
 The tool takes as input ```possorted_bam.bam``` file from cellranger and list of cell barcodes ```barcodes.tsv```. 
 It outputs a tsv file with median/mean number of fragments per cell as function of number of reads.
 
+## Prepare environment
+```
+conda create -n complexity.yaml
+conda activate complexity
+```
+
+
 ## Example usage
 
 ```
@@ -53,3 +60,15 @@ head OUT_FOLDER/complexity.tsv
 0.7	115426388.0	5400.0	9344.447495361781
 ```
 ![complexity_image](img/complexity.png)
+
+
+## Dependencies
+```
+Python:
+numpy, pandas, matplotlib, pysam
+
+Bash:
+samtools, sinto
+```
+
+```
